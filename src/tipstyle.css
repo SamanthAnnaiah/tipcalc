@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Smono";
+  src: url("./smono.ttf");
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Smono";
+  font-weight: 700;
+}
+
+div.middler {
+  margin-top: 25px;
+  display: grid;
+  place-items: center;
+}
+
+div.main_div {
+  color: #100101 !important;
+  padding: 10px;
+  height: 75vh;
+  width: 850px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+div.sub_div {
+  width: 50%;
+  height: 90%;
+  margin: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.sub_div div {
+  margin: 10px;
+}
+
+.bg1 {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.berror {
+  border-color: red;
+  border-width: 4px;
+}
+
+.cerror {
+  color: red;
+}
+
+div input.bg2 {
+  background-color: hsl(180, 57%, 77%);
+  color: black !important;
+  width: 100px;
+}
+
+div.bg3 {
+  background-color: hsl(194, 44%, 72%);
+  color: hsl(183, 100%, 15%);
+}
+
+p input {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+div.listplacer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tinp {
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: right;
+  width: 15%;
+}
+
+.tinp2 {
+  width: 10;
+}
+
+.tinp:hover {
+  cursor: pointer;
+}
+
+div > p {
+  font-size: 12px;
+  color: hsl(186, 14%, 43%);
+}
+
+.bclass {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hsl(172, 67%, 45%); /* Button Background Color */
+  color: #100101; /* Text Color */
+  border: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  width: 70%;
+}
+
+.bclass:hover {
+  background-color: hsl(173, 41%, 80%);
+}
+
+/* grid styles */
+
+.grid-container {
+  display: grid;
+  grid:
+    "section1 section2"
+    "section3 section4"
+    "section51 section51"
+    "section5 section5"
+    "section6 section6";
+  grid-gap: 20px; /* Gap between grid items */
+  height: 300px; /* Set a fixed height for the grid container */
+}
+
+.item1 {
+  font-size: 12px;
+  color: white;
+  padding-top: 40px;
+}
+
+.item2 {
+  font-size: 33px;
+  color: hsl(172, 67%, 45%);
+  padding: 10px;
+}
+
+/* Items in row1 */
+.row1 {
+  justify-self: center; /* Left-justify the content */
+  align-self: start;
+}
+
+/* Items in row2 */
+.row2 {
+  align-self: center; /* Start from the bottom */
+  justify-self: center;
+}
+
+.s1 {
+  grid-area: section1;
+}
+.s2 {
+  grid-area: section2;
+}
+.s3 {
+  grid-area: section3;
+}
+.s4 {
+  grid-area: section4;
+}
+.s51 {
+  grid-area: section51;
+}
+.s5 {
+  grid-area: section5;
+}
+.s6 {
+  grid-area: section6;
+}
